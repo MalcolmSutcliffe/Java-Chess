@@ -63,7 +63,7 @@ public class Draw extends Frame{
                   }
                   if (j.piece.color == 1 && j.piece.identifier == ' ' && !(Chess.board.array[row-1][column].piece == null) && Chess.board.array[row-1][column].piece.color == 0
                         && Chess.board.array[row-1][column].piece.identifier == ' ' && Chess.board.array[row-1][column].piece.enPassant){
-                    Chess.board.array[row+1][column].piece = null;
+                    Chess.board.array[row-1][column].piece = null;
                   }
                   j.piece.move(row, column, true);
                   for (Piece p : Chess.players[1-Chess.turn].pieces){

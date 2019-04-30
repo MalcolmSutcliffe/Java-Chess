@@ -199,7 +199,7 @@ public class Pawn extends Piece{
         }
         if (!(Chess.board.array[currentSquare.row][currentSquare.column-1].piece == null) && Chess.board.array[currentSquare.row][currentSquare.column-1].piece.color == 0 
               && Chess.board.array[currentSquare.row][currentSquare.column-1].piece.identifier == ' ' && Chess.board.array[currentSquare.row][currentSquare.column-1].piece.enPassant){
-          a.add(Chess.board.array[currentSquare.row-1][currentSquare.column-1]);
+          a.add(Chess.board.array[currentSquare.row+1][currentSquare.column-1]);
         }
       } else {
         if (!(Chess.board.array[currentSquare.row+1][currentSquare.column-1].piece == null) && Chess.board.array[currentSquare.row+1][currentSquare.column-1].piece.color == 0){
